@@ -5,10 +5,7 @@
 
 @font-face {
   font-family: "Norse-Bold";
-  src: url("Norse-Bold.eot?") format("eot"),
-    url("Norse-Bold.woff") format("woff"),
-    url("Norse-Bold.ttf") format("truetype"),
-    url("Norse-Bold.svg#Norse-Bold") format("svg");
+  src: url("fonts/Norse-Bold.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,15 +39,64 @@
   height: auto;
 }
 
-.form {
-  height: 100vh;
+.rightSide {
+  font-family: sans-serif;
   width: 63vw;
-  border: 1px solid black;
-}
-.heading {
-  margin: 20vh 14vw 20vh 4vw;
+  margin-left: 2%;
+  margin-top: 6%;
+  margin-right: 15%;
 }
 
-.heading h2 {
-  padding-bottom: 4vh;
+.space {
+  margin-top: 5%;
+}
+form {
+  margin-top: 2%;
+  display: flex;
+}
+.firstCol {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 50px;
+}
+
+input {
+  margin-right: 5vw;
+  padding: 5px;
+  width: 13vw;
+  height: 3vh;
+  border: #e5e7eb;
+}
+
+input:focus {
+  border: blue;
+  box-sizing: border-box;
+}
+button {
+  margin-top: 10%;
+  width: 50%;
+  padding: 15px;
+  background-color: #596d48;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: hsl(92, 20%, 28%);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: hsl(92, 20%, 28%);
+}
+a {
+  color: hsl(92, 20%, 35%);
+  text-decoration: none;
+}
+
+p {
+  margin-top: 8%;
 }
